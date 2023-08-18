@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-To code challeng apps.
+- To code challenges apps.
 
 ### Continued development
 
