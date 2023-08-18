@@ -26,26 +26,30 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     align-items: center;
     font-size: 1.2rem;
-    margin: auto 4rem 1rem;
+    margin-bottom: 1rem;
   }
   .app-title {
     font-size: 1.3vw;
     margin-bottom: 1rem;
     text-align: center;
   }
-  input {
+  .age-input {
     font-size: 1.2rem;
     border: none;
     box-shadow: 0 0 4px #999;
     padding: 0.5rem;
+    width: 6rem;
   }
   main {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 30rem;
+    margin: 1vh auto;
     padding: 2rem;
     border-radius: 1rem 1rem 8rem 1rem;
     box-shadow: 0 0 4px #999;
@@ -84,9 +88,9 @@
     <div>Year</div>
   </div>
   <div class="grid">
-    <div><input type="number" bind:value={dd} min={1} max={31}></div>
-    <div><input type="number" bind:value={mo} min={1} max={12}></div>
-    <div><input type="number" bind:value={yr} min={1900} max={maxyear}></div>
+    <div><input class="age-input" type="number" bind:value={dd} min={1} max={31}></div>
+    <div><input class="age-input" type="number" bind:value={mo} min={1} max={12}></div>
+    <div><input class="age-input" type="number" bind:value={yr} min={1900} max={maxyear}></div>
   </div>
   <div class="arrow">
     <hr>
