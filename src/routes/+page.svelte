@@ -69,6 +69,10 @@
     font-weight: 600;
     color: #333;
   }
+  .age .clr {
+    color: purple;
+    font-weight: inherit;
+  }
   .arrow {
     background: url(../assets/images/icon-arrow.svg) no-repeat 0 50%;
   }
@@ -96,9 +100,9 @@
     <hr>
   </div>
   <div class="age-box">
-    <div class="age">{age.years} years</div>
-    <div class="age">{age.months} months</div>
-    <div class="age">{age.days} days</div>
+    <div class="age"><span class="clr">{age.years}</span> years</div>
+    <div class="age"><span class="clr">{age.months}</span> months</div>
+    <div class="age"><span class="clr">{age.days}</span> days</div>
   </div>
 
   <div class="attribution">
