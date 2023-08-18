@@ -92,9 +92,9 @@
     <div>Year</div>
   </div>
   <div class="grid">
-    <div><input class="age-input" type="number" bind:value={dd} min={1} max={31}></div>
-    <div><input class="age-input" type="number" bind:value={mo} min={1} max={12}></div>
-    <div><input class="age-input" type="number" bind:value={yr} min={1900} max={maxyear}></div>
+    <div><label for="dd"><input id="dd" class="age-input" type="number" bind:value={dd} min={1} max={31}></label></div>
+    <div><label for="mm"><input id="mm" class="age-input" type="number" bind:value={mo} min={1} max={12}></label></div>
+    <div><label for="yy"><input id="yy" class="age-input" type="number" bind:value={yr} min={1900} max={maxyear}></label></div>
   </div>
   <div class="arrow">
     <hr>
